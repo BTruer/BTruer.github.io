@@ -40,7 +40,10 @@ _includes   _posts      about.md    feed.xml README.md(added back in)```, run ``
 
 # Step 5 - Rejoice for a Moment
 1. Go to your favorite browser and in the address type in ```username.github.io``` - that's your site!
-2. Now begin making it your own... i'll save that for another tutorial.
+2. Now begin making it your own
+
+Here is what your site would look like (roughly):
+![alt text](https://btruer.github.io/images/Jekyll.png)
 
 
 
