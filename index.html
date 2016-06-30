@@ -4,8 +4,15 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-
+  <h1 id="test" class="page-heading">Posts</h1>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#test").hover(function(){
+        $("#test").hide();
+      });
+    });
+  </script>
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
