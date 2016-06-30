@@ -18,7 +18,7 @@ Bottom line - make sure you have a good development environment with minimal dis
 5. Run ```sudo apt-get install update``` to make sure your package manager is up to date. Replace ```apt-get``` with your package-manager. Run ```sudo apt-get install git```. If you are using [WIN10 or OSX](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) just download and install as usual.
 6. Now just check if it is properly installed by just typing ```git --version``` and you should see 2.something (or maybe 3 if that is released when you are reading this).
 7. Now in the terminal move into a location that you want to put your code into ex: ```cd Documents/this/is/where/i/put/my/code/```
-8. Before we continue it is important to ```git config user.name yourGithubUserNameHere```, ```git config user.email yourEmailForGithubHere```. Now just test it before you continue. So ```git config user.name``` and ```git config user.email``` and you should see whatever you just set.
+8. Before we continue it is important to ```git config --global user.name yourGithubUserNameHere```, ```git config --global user.email yourEmailForGithubHere```. Now just test it before you continue. So ```git config user.name``` and ```git config user.email``` and you should see whatever you just set.
 9. Now we need the repository which on github onto our local machine. So ```git clone https://github.com/username/username.github.io.git``` where username is your username for github.
 10. Move into the new folder that appeared ```cd username.github.io```
 
