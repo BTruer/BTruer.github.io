@@ -1,14 +1,14 @@
 # Setup
-title:               Utterson
-tagline:             The Jekyll Companion
-url:                 http://utterson.alidcastano.com
-analytics_id:        UA-53335201-2
+title:               Bhargav Tarpara
+tagline:             Bhargav Tarpara's site
+url:                 btruer.github.io
+analytics_id:
 
 # About/contact
 author:
-  name:                Alid Castano
-  email:               "" # email here 
-  avatar:              img/avatar.jpg 
+  name:                Bhargav Tarpara
+  email:               "bhargavtarpara@yahoo.com" # email here
+  avatar:              img/avatar.jpg
   profile-pic:         img/profile-pic.jpg
 
 
@@ -25,15 +25,14 @@ sass:
 defaults:
   -
     scope:
-      path: "" 
-      type: "posts" 
+      path: ""
+      type: "posts"
     values:
       layout: "post"
-      author: Gabriel Utterson
+      author: Bhargav Tarpara
   -
     scope:
-      path: "" 
-      type: "pages" 
+      path: ""
+      type: "pages"
     values:
       layout: "page"
-      

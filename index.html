@@ -1,15 +1,15 @@
 ---
 layout: default
 title: Home
-type: Home 
-header: none 
+type: Home
+header: none
 footer: none
 ---
 
 <div class="home">
 
   <div class="mini-intro">
-    <img class="avatar" src="{{site.author.profile-pic}}" alt="your-photo">
+<!--    <img class="avatar" src="{{site.author.profile-pic}}" alt="your-photo"> -->
     {% capture home-intro %}
       {% include content/home-intro.md %}
     {% endcapture %}
@@ -20,7 +20,7 @@ footer: none
     <li class="tab-header-and-content">
       <a href="#" id="trigger-form" class="tab-aside-link is-active">Newsletter</a>
       <div class="tab-aside-content">
-      <!-- no tab content, filler div for initial borders --> 
+      <!-- no tab content, filler div for initial borders -->
       </div>
     </li>
 
@@ -43,7 +43,7 @@ footer: none
 
     <li class="tab-header-and-content">
       <a href="#" class="tab-link">Projects</a>
-      <div class="tab-content featured-projects"> 
+      <div class="tab-content featured-projects">
         {% capture home-projects %}
           {% include content/home-projects.md %}
         {% endcapture %}
@@ -69,9 +69,3 @@ footer: none
   </ul>
 
 </div>
-
-
-
-
-
-
