@@ -73,7 +73,7 @@ a {
 
 header {
     margin: 0 !important;
-    padding: 0 !important; 
+    padding: 0 !important;
 }
 
 article {
@@ -103,12 +103,12 @@ nav {
         text-transform: uppercase;
         margin: 0px 5px;
     }
-    
+
     a:hover, a:active {
         border-bottom-color: $color-3;
         text-decoration: none !important;
     }
-    
+
     a:active { background: rgba(0,0,0,0.2); }
 
 }
@@ -142,7 +142,7 @@ nav {
 
 
     .description { color: $color-3; }
-    
+
     .main-menu {
         padding: 0.1em;
         font-size: 1.1em;
