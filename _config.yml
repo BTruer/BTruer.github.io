@@ -5,7 +5,7 @@ name: "Bhargav Tarpara"
 description: "Human on Earth"
 language: "en"
 
-url: btruer.github.io
+url: http://btruer.github.io
 baseurl: ''
 
 #------------------------------------------------------------------------------
@@ -29,7 +29,7 @@ permalink: /:title
 #------------------------------------------------------------------------------
 # Social sharing, comments and RSS.
 #------------------------------------------------------------------------------
-disqus-id: bhargavtarpara
+disqus-id: yourusername
 
 enable-share: true
 github: btruer
