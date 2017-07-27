@@ -34,8 +34,6 @@ disqus-id: yourusername
 enable-share: true
 github: btruer
 
-rss-feed-limit: 10
-rss-show-full: false
 
 #------------------------------------------------------------------------------
 # Configuration, plugins, gems, etc..
