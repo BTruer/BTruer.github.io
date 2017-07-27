@@ -1,38 +1,49 @@
-# Setup
-title:               Bhargav Tarpara
-tagline:             Bhargav Tarpara's site
-url:                 btruer.github.io
-analytics_id:
+#------------------------------------------------------------------------------
+# General
+#------------------------------------------------------------------------------
+name: "Bhargav Tarpara"
+description: "Human on Earth"
+language: "en"
 
-# About/contact
-author:
-  name:                Bhargav Tarpara
-  email:               "bhargavtarpara@yahoo.com" # email here
-  avatar:              img/avatar.jpg
-  profile-pic:         img/profile-pic.jpg
+url: btruer.github.io
+baseurl: ''
 
+#------------------------------------------------------------------------------
+# Markdown processor and code highlighting
+#------------------------------------------------------------------------------
+markdown: kramdown
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+highlighter: rouge
 
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
-# Build settings
-markdown:            kramdown
-permalink:           /:title
+#------------------------------------------------------------------------------
+# Pagination and friendly URLs
+#------------------------------------------------------------------------------
+paginate: 5
+paginate_path: /page-:num
+permalink: /:title
+
+#------------------------------------------------------------------------------
+# Social sharing, comments and RSS.
+#------------------------------------------------------------------------------
+disqus-id: bhargavtarpara
+
+enable-share: true
+github: btruer
+
+rss-feed-limit: 10
+rss-show-full: false
+
+#------------------------------------------------------------------------------
+# Configuration, plugins, gems, etc..
+#------------------------------------------------------------------------------
+source: .
+destination: ./_site
+gems: ['jekyll-paginate']
+
 sass:
-  sass_dir:          _sass
-  style:            :compressed
-
-
-# Default settings
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      author: Bhargav Tarpara
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
+    style: :compressed
+    sass_dir: assets/css/

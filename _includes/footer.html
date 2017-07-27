@@ -1,19 +1,7 @@
-{% if page.footer != 'none' %}
-<footer class="site-footer fade-in" id="footer">
-  <div class="read-next"> Read Next: 
-    {% if page.previous.url %}
-    <a class="prev-post" href="{{page.previous.url}}">{{page.previous.title}}</a>
-    {% else if page.next.url %}
-    <a class="next-post" href="{{page.next.url}}">{{page.next.title}}</a>
-    {% else %}
-    {% endif %}
-  </div>
-    
-  <a href="/" class="back-home">Back Home</a></p> 
-
-  <div class="copyright"> 
-    <small> &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ page.date | date: '%Y' }}</time> {{site.author.name}}</small>
-  </div>
-
-</footer>
-{% endif %}
+<div class="footer module">
+<!--    <span class="licence">Copyright 2015 &copy; Minimal-block.</span>
+    <p>
+        Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyllrb</a>.
+        The <a href="https://github.com/drvy/minimal-block" target="_blank">minimal-block theme.</a>
+    </p>  -->
+</div>
