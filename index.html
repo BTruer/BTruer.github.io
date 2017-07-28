@@ -4,6 +4,8 @@ layout: default
 <section class='main-content'>
 
     {% for post in paginator.posts %}
+    {% if post.reviews != null %}
+    {% else %}
         <article class='module color-3'>
             <header>
                 <span class='categories'>{{ post.categories | array_to_sentence_string }}</span>
@@ -20,6 +22,7 @@ layout: default
             <p>{{ post.excerpt | strip_html | truncate: 250 }}</p>
 
         </article>
+    {% endif %}
     {% endfor %}
 
     <div class='module pagination color-3'>

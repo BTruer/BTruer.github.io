@@ -3,6 +3,8 @@ layout: post
 title:  "Hello World"
 date:   2017-01-01 13:00:00
 categories: cats, dogs
+#tutorials: tutorials
+reviews: reviews
 ---
 
 <div class="entry-content">
