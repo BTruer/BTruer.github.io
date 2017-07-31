@@ -6,8 +6,8 @@ description: "Human on Earth"
 language: "en"
 
 #url:http://bhargavtarpara.com
-url: https://btruer.github.io
-#url: http://localhost:4000
+#url: https://btruer.github.io
+url: http://localhost:4000
 baseurl: ''
 timezone: America/New_York
 
