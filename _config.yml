@@ -33,7 +33,7 @@ permalink: /:title
 # Social sharing, comments and RSS.
 #------------------------------------------------------------------------------
 disqus-id: bhargavtarpara
-
+enable_disqus: true
 enable-share: true
 github: btruer
 

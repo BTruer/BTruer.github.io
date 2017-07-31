@@ -3,7 +3,8 @@ layout: post
 title:  "From Nothing to Something - How to Build a Static Website with Github and Jekyll from Scratch or Jekyll themes"
 date:   2016-05-10 01:00:00
 tags: how to, create, website, Github, jekyll, blog, post, ghpages, tutorial, 2017
-mytype: tutorial
+mytype: tutorials
+comments: true
 ---
 "Hello World" - is how you start your CS education. So this post will explain in detail how to get a baseline personal website like this. There are two ways: you can use Github's default style or just download a template and drag it into the repo.
 
@@ -40,10 +41,7 @@ _includes   _posts      about.md    feed.xml```, run ```git status``` and you sh
 
 # Step 5 - Rejoice for a Moment
 1. Go to your favorite browser and in the address type in ```username.github.io``` - that's your site!
-2. Now begin making it your own. Understand the file structure of jekyll.
-
-Here is what your site would look like (roughly):
-![alt text](https://btruer.github.io/images/Jekyll.png)
+2. Now begin making it your own. Understand the file structure of Jekyll.
 
 # Step 4 - Alternative way to customize the look
 1. Go to [jekyll themes](https://www.google.com/search?q=jekyll+themes) and find a theme you like.
@@ -51,8 +49,7 @@ Here is what your site would look like (roughly):
 3. Copy and paste the contents of the theme into your empty username.github.io directory
 
 
-## _Helpful links/tutorials:_
-
-  1. Jekyll file structure ***important read***: [http://jekyllrb.com/docs/usage/](http://jekyllrb.com/docs/usage/)
-  2. Markdown syntax for blog post that go in ```_posts``` [https://guides.github.com/features/mastering-markdown/](https://guides.github.com/features/mastering-markdown/)   [https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#blockquotes](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#blockquotes)
-  3. [ZacBlanco's tutorial](http://blanco.io/blog/jekyll/building-a-site-with-jekyll)
+# Helpful links/tutorials:
+1. Jekyll file structure ***important read***: [http://jekyllrb.com/docs/usage/](http://jekyllrb.com/docs/usage/)
+2. Markdown syntax for blog post that go in ```_posts``` [https://guides.github.com/features/mastering-markdown/](https://guides.github.com/features/mastering-markdown/)   [https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#blockquotes](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#blockquotes)
+3. [ZacBlanco's tutorial](http://blanco.io/blog/jekyll/building-a-site-with-jekyll)
