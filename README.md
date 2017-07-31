@@ -1,7 +1,6 @@
-This is a readme. This is an example of bad documentation.
-TODO
+#TODO
 
-make dissuq work
-add multi blog
-add connect/email page
-change the style and look
+1. make disuq work
+2. ~~ add multi blog ~~
+3. add connect/email page
+4. change the style and look
