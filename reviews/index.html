@@ -3,8 +3,8 @@ layout: default
 ---
 <section class='main-content'>
 
-    {% for post in paginator.posts %}
-<!--    {% if post.reviews == 'reviews' %} -->
+    {% for post in site.posts %}
+      {% if post.mytype contains 'reviews' %}
         <article class='module color-3'>
             <header>
                 <span class='categories'>{{ post.categories | array_to_sentence_string }}</span>
@@ -21,9 +21,8 @@ layout: default
             <p>{{ post.excerpt | strip_html | truncate: 250 }}</p>
 
         </article>
-<!--    {% endif %} -->
+        {% endif %}
     {% endfor %}
-
     <div class='module pagination color-3'>
         {% if paginator.previous_page %}
             <a href='{{ site.url }}{{ paginator.previous_page_path }}' class='previous'>Previous</a>
