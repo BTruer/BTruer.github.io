@@ -4,7 +4,6 @@ title:  "From Nothing to Something - How to Build a Static Website with Github a
 date:   2016-05-10 01:00:00
 categories: how-to create website Github jekyll blog post ghpages 2017
 mytype: tutorials
-comments: true
 ---
 "Hello World" - is how you start your CS education. So this post will explain in detail how to get a baseline personal website like this. There are two ways: you can use Github's default style or just download a template and drag it into the repo.
 
