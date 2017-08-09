@@ -68,8 +68,7 @@ public class HelloWorld {
         System.out.println("Hello, World");
     }
 }
-```
-2. Open up a terminal and moved to where you save HelloWorld.java `cd location/subdir`
+```2. Open up a terminal and moved to where you save HelloWorld.java `cd location/subdir`
 3. Compile and then run the program `javac HelloWorld.java` and `java HelloWorld` ![alt text](images/post_intro_java_7.png "java")
 
 So what exactly is going on when you type the command `java` and `javac`. Where is this running from? For this we need to understand what environmental variables are.
@@ -86,4 +85,3 @@ LINKS/SOURCES:
 2. https://www.javatpoint.com/difference-between-jdk-jre-and-jvm
 3. http://www.journaldev.com/546/difference-jdk-vs-jre-vs-jvm
 4.  https://stackoverflow.com/questions/1906445/what-is-the-difference-between-jdk-and-jre
-5.
