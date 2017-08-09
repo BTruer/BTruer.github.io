@@ -1,13 +1,10 @@
 ---
 layout: post
-title:  "Intro to Computer Science: Installing Java; Understanding JDK,JRE,JVM; Understanding PATH, CLASSPATH, JAVA_HOME and JRE_HOME"
+title:  "Intro to Computer Science: Installing Java; Understanding JDK, JRE, JVM; Understanding PATH, CLASSPATH, JAVA_HOME and JRE_HOME"
 date:   2017-08-01 01:00:00
 categories: java path classpath javahome jrehome jre jdk jvm install intro to computer science language
 mytype: tutorials
 ---
-
-# Intro to Computer Science: Installing Java; Understanding JDK,JRE,JVM; Understanding PATH, CLASSPATH, JAVA_HOME and JRE_HOME
-
 The purpose of this article is to inform you how to install java, how to run your first java program, and to understand what happens when you run a java program.
 
 ## What is JVM, JRE, JDK?

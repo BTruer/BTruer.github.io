@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "From Nothing to Something - How to Build a Static Website with Github and Jekyll from Scratch or Jekyll themes"
-date:   2016-05-10 01:00:00
+title: "How to Build a Static Website with Github and Jekyll from Scratch or Jekyll themes"
+date: 2016-05-10 01:00:00
 categories: how-to create website Github jekyll blog post ghpages 2017
 mytype: tutorials
 ---
