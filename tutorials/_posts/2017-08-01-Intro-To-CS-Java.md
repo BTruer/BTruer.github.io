@@ -36,10 +36,10 @@ At a high level the JVM includes
 In short JDK contains JRE which contains JVM.
 
 ![alt text](images/post_intro_java_3.jpg "Java")
-src:http://www.oracle.com/ocom/groups/public/@otn/documents/digitalasset/2167990.jpg
+* src:http://www.oracle.com/ocom/groups/public/@otn/documents/digitalasset/2167990.jpg
 
 ![alt text](images/post_intro_java_4.png "Java")
-src:https://i.stack.imgur.comAaveN.png
+* src:https://i.stack.imgur.comAaveN.png
 
 ## Install Java
 Well first check if you have it installed already. Open up terminal or powershell/cmd.
@@ -56,8 +56,8 @@ You should be able to run `java` and `javac` from the command line by this point
 
 ## What exactly happens when you run a program? What is PATH, JAVA_HOME, JRE_HOME, and CLASSPATH?
 Let's see an example
-1. open up a text editor and save this java program. Name it ~HelloWorld.java~
-```java
+1. open up a text editor and save this java program. Name it ~ HelloWorld.java ~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ java
 HelloWorld.java
 public class HelloWorld {
     public static void main(String[] args) {
@@ -65,7 +65,9 @@ public class HelloWorld {
         System.out.println("Hello, World");
     }
 }
-```2. Open up a terminal and moved to where you save HelloWorld.java `cd location/subdir`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+2. Open up a terminal and moved to where you save HelloWorld.java `cd location/subdir`
 3. Compile and then run the program `javac HelloWorld.java` and `java HelloWorld` ![alt text](images/post_intro_java_7.png "java")
 
 So what exactly is going on when you type the command `java` and `javac`. Where is this running from? For this we need to understand what environmental variables are.
