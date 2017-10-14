@@ -2,6 +2,4 @@
 layout: page
 ---
 # Contact
-* bhargav dot tarpara1 at gmail dot com
-* this other
-* this next
+* Message me on [Linkedin](https://linkedin.com/in/bhargav1)
