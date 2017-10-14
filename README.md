@@ -10,4 +10,4 @@ The todo list below is a good example of things that should be done for anyone t
 5. add google anayl.
 6. seo for this site
 7. add connect/email page
-8. change the style and look
+8. change the style and look of posts

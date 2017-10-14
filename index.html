@@ -4,7 +4,7 @@ layout: default
 <section class='main-content'>
 
     {% for post in site.posts %}
-      {% if post.mytype contains 'tutorials' or post.mytype contains 'reviews' or post.mytype contains 'projects' %}
+      {% if post.mytype contains 'tutorials' or post.mytype contains 'projects' %}
         <article class='module color-3'>
             <header>
                 <span class='categories'>{{ post.categories | array_to_sentence_string }}</span>

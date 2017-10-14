@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Intro to Computer Science: Installing Java; Understanding JDK, JRE, JVM; Understanding PATH, CLASSPATH, JAVA_HOME and JRE_HOME"
+title:  "Installing Java; Understanding JDK, JRE, JVM, PATH, CLASSPATH, JAVA_HOME and JRE_HOME"
 date:   2017-08-01 01:00:00
 categories: java path classpath javahome jrehome jre jdk jvm install intro to computer science language
 mytype: tutorials
@@ -50,7 +50,7 @@ If it is not installed it should look something like this:
 
 If you are on windows or mac you can install the jdk (java + development tools) from [here](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
-You can also install it from the command line for macs and linux: `sudo packageManagerName install oracle-java`. For example ` sudo app-get install java`
+You can also install it from the command line for macs and linux: `sudo packageManagerName install oracle-java`. For example ```sudo app-get install java```
 
 You should be able to run `java` and `javac` from the command line by this point.
 
