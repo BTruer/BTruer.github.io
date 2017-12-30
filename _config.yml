@@ -43,7 +43,9 @@ github: btruer
 #------------------------------------------------------------------------------
 source: .
 destination: ./_site
-gems: ['jekyll-paginate']
+gems: 
+  - jekyll-paginate
+  - jekyll-last-modified-at
 
 sass:
     style: :compressed
