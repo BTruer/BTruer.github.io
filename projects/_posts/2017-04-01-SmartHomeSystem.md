@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Smart Home System"
+title: "SmartHomeSystem"
 date: 2017-04-01 01:00:00
 categories: python flask android software engineering unity simulation
 mytype: projects

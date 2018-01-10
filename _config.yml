@@ -46,6 +46,7 @@ destination: ./_site
 gems: 
   - jekyll-paginate
   - jekyll-last-modified-at
+  - jekyll-sitemap
 
 sass:
     style: :compressed
