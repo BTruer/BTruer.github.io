@@ -1,7 +1,15 @@
 ---
 layout: default
 ---
-# Contact
-
-* Message me or connect with me on [Linkedin](https://linkedin.com/in/bhargav1)
-* Email me: tarparab at outlook.com
+<div class="main-content">
+	<article class="module color-3">
+		<h1>Contact</h1>
+			<p>
+				* Message me or connect with me on <a href="https://linkedin.com/in/bhargav1">Linkedin</a>
+			</p>
+			<div>
+			<p>
+				* Email me: tarparab at outlook.com
+			</p>
+	
+</div>

@@ -2,5 +2,25 @@
 layout: default
 ---
 <div class="main-content">
+    <article class="module color-3">
+        <h1>Rutgers University CS111 (Intro to Computer Science) Recitation Supplements Spring 2018</h1>
+</article>
+	{% for post in site.posts %}
+          {% if post.mytype contains 'cs111' %}
+            <article class='module color-3'>
+                <header>
+                    <span class='categories'>{{ post.categories | array_to_sentence_string }}</span>
 
+                    <h2>
+                        <a href='{{ fullUrl }}{{ post.url }}' title='{{ post.title }}'>
+                            {{ post.title }}
+                        </a>
+                    </h2>
+                </header>
+
+                <p>{{ post.excerpt | strip_html | truncate: 250 }}</p>
+
+            </article>
+            {% endif %}
+        {% endfor %}
 </div>
