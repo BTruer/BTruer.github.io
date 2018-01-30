@@ -34,5 +34,6 @@ If not balanced also replace one of them.
 Then weigh it again and draw a conclusion. 
 
 # Truth Tables
+Given a boolean expression (an expression that evaluates to true or false) come
 
 # Converting number systems
