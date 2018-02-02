@@ -20,7 +20,7 @@ When we think programmatically or in CS we want to break the problem down int o 
 
 Let's look at a simpler problem. When you have 3 coins and one of them is bad (lighter or heavier fake coin) and you have a scale that you can use 2 times. If you put two coins on the balance there are two possible results. The coins balance (equal) or they are unequal. If the coins balance then we know that the bad coin is the third one that is not on the balance. If the balance is unequal we can take one off and put the third one on. If the coins are equal in weight the bad coin is the one we took off else it is the one was in both weighs.
 
-![alt text](images/coinproblem.jpg "Coin problem")
+![8 coins](images/coinproblem.jpg "Coin problem")
 
 We can now extend this logic to 8 coins (A,B,C,D,E,F,G)
 1st weigh:	AB vs CD  and EFGH is off to the side
@@ -34,16 +34,18 @@ If balanced replace one of them.
 If not balanced also replace one of them.
 Then weigh it again and draw a conclusion. 
 
+![down to 4 coins](images/coinproblem2.jpg "Coin problem")
+
+Now try it with 9 coins at 3 weighs and 13 coins at 4 weighs.
+[Solution](https://en.wikipedia.org/wiki/Balance_puzzle)
+
 ## Truth Tables
 
-The most primitive operators are NOT, AND, and OR, where AND and OR require two input variables and NOT inverts a value. 
-
-AND Truth Table:
-
-OR Truth Table:
-
-NOT Truth Table:
+The most primitive operators are NOT, AND, and OR, where AND and OR require two input variables and NOT inverts a value. Here is a link to some [tables](https://medium.com/i-math/intro-to-truth-tables-boolean-algebra-73b331dd9b94).
 
 ## Converting number systems
 
 These wiki links should sacrifice.
+[1.](https://www.wikihow.com/Convert-from-Decimal-to-Binary)
+[2.](https://www.electronics-tutorials.ws/binary/bin_2.html)
+[3.](https://www.wikihow.com/Convert-from-Binary-to-Decimal)

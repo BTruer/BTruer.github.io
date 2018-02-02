@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Recitation-2"
+title: "Recitation 2: Variables, Initialization, Assignment, Declaration, Boolean Expressions, installing and running java"
 date: 2018-01-29 01:00:00
 categories: intro computer science recitation installing java
 mytype: cs111
