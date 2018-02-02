@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Recitation-1"
+title: "Recitation 1: 8 Coin Problem, Truth Tables, Boolean Expressions"
 date: 2018-01-22 01:00:00
 categories: intro computer science recitation
 mytype: cs111
@@ -34,7 +34,7 @@ If balanced replace one of them.
 If not balanced also replace one of them.
 Then weigh it again and draw a conclusion. 
 
-![down to 4 coins](images/coinproblem2.jpg "Coin problem")
+![down to 4 coins](images/coinproblem2.JPG "Coin problem")
 
 Now try it with 9 coins at 3 weighs and 13 coins at 4 weighs.
 [Solution](https://en.wikipedia.org/wiki/Balance_puzzle)

@@ -1,14 +1,12 @@
 ---
 layout: post
-title: "Recitation 2: Variables, Initialization, Assignment, Declaration, Boolean Expressions, installing and running java"
+title: "Recitation 2: Variables, Initialization, Assignment, Declaration, Boolean Expressions, installing and running java programs"
 date: 2018-01-29 01:00:00
 categories: intro computer science recitation installing java
 mytype: cs111
 ---
 
-# Recitation 2
-
-What are variables? What is declaration, assignment, initialization, a boolean expression, types, and syntax?
+# Recitation 2 What are variables? What is declaration, assignment, initialization, a boolean expression, types, and syntax?
 
 A variable is a piece of memory that can contain a data value.
 
@@ -26,10 +24,10 @@ In programming languages every variable has a type. In java there are two catego
 * * char -- ex. 'a','@','!','Z'
 * * boolean -- ex. true, false
 
-Boolean expressions evaluate to true or false. They use operators like `<`,`<=`,`&&`,`||`,`!`. You can find these expressions in the conditional part of if statements. Boolean expression can be found in the parenthesis of `if(<Boolean Expression>)`, `while(<Boolean Expression>)`, and `for(<Boolean Expression>)`. 
+Boolean expressions evaluate to true or false. They use operators like `<`,`<=`,`&&`,`||`,`!`. You can find these expressions in the conditional part of if statements. Boolean expression can be found in the parenthesis of `if(<Boolean Expression>)`, `while(<Boolean Expression>)`, and `for(;<Boolean Expression>;)`. 
 
 # How to install Java, compile and run java code
-The extended post is [here](http://bhargavtarpara.com/Intro-To-CS-Java), which describes what exactly the JDK and all of this is, but here are the steps and basics.
+The extended post is [here](http://bhargavtarpara.com/Installing-Java-Understanding-JDK-JRE-JVM-JAVA_HOME), which describes what exactly the JDK and all of this is, but here are the steps and basics.
 
 1. Download the [JDK (java so you can code in it and run your programs)](http://www.oracle.com/technetwork/java/javase/downloads/jdk9-downloads-3848520.html) for your operating system.
 
