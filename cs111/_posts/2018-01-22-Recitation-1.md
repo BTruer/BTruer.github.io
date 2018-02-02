@@ -6,7 +6,7 @@ categories: intro computer science recitation
 mytype: cs111
 ---
 
-### Recitation 1
+# Recitation 1
 What is Computer Science? What is a programmatic way of solving something? Lets say I'm an alien and I don't know how to tie shoes. How would you describe the process of tying shoes to an alien or really a child who has no idea. You may say "Take your left hand and grab the left lace and then take your right hand and grab the right lace. Then pull them up and cross them over etc." Describing these steps is a systemic way of tying ones shoes that can be repeated. This description is what is known as an algorithm or put simply a step by step process of achieving something or computing something.
 
 ## The Coin Problem (8 coin, 9 coin, 13 coin)
@@ -14,7 +14,8 @@ Imagine you have 8 identical coins. However one of them is fake. It weighs sligh
 
 Well what is our initial intuitive approach? Put 4 and 4 and see which side has the bad coin. Okay: you put the coins on 4 and 4 but then which side has the bad coin? We don't know if the bad coin is heavier or lighter. So we don't know which pile of 4 coins to then start looking in. In other words we have now wasted the first weigh because now we have no additional information or we have not eliminated any choices.
 
-# Solution to the coin problem
+## Solution to the coin problem
+
 When we think programmatically or in CS we want to break the problem down int o its most simple components. What is the most basic problem? 
 
 Let's look at a simpler problem. When you have 3 coins and one of them is bad (lighter or heavier fake coin) and you have a scale that you can use 2 times. If you put two coins on the balance there are two possible results. The coins balance (equal) or they are unequal. If the coins balance then we know that the bad coin is the third one that is not on the balance. If the balance is unequal we can take one off and put the third one on. If the coins are equal in weight the bad coin is the one we took off else it is the one was in both weighs.
@@ -33,6 +34,16 @@ If balanced replace one of them.
 If not balanced also replace one of them.
 Then weigh it again and draw a conclusion. 
 
-# Truth Tables
+## Truth Tables
 
-# Converting number systems
+The most primitive operators are NOT, AND, and OR, where AND and OR require two input variables and NOT inverts a value. 
+
+AND Truth Table:
+
+OR Truth Table:
+
+NOT Truth Table:
+
+## Converting number systems
+
+These wiki links should sacrifice.
