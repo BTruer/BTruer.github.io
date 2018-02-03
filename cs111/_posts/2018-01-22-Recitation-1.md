@@ -45,7 +45,7 @@ The most primitive operators are NOT, AND, and OR, where AND and OR require two 
 
 ## Converting number systems
 
-These wiki links should sacrifice.
+These wiki links should suffice.
 [1.](https://www.wikihow.com/Convert-from-Decimal-to-Binary)
 [2.](https://www.electronics-tutorials.ws/binary/bin_2.html)
 [3.](https://www.wikihow.com/Convert-from-Binary-to-Decimal)
