@@ -38,7 +38,7 @@ So b is 2.
 
 ### Imports in Java and how to use the IO and Math library
 
-In general you in java you import packages which are bunch of classes put [together](https://www.leepoint.net/language/10basics/import.html).
+In general, in java you import packages which are bunch of classes put [together](https://www.leepoint.net/language/10basics/import.html).
 
 For now lets stick with a simple model of where you put your code, let's say your desktop. When you open up your shell you should move into the desktop where your code is. Let's say it in a folder called CS. In general when yo want to use already written code or someone else code via a library you would import the library like so:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ java
@@ -53,5 +53,6 @@ public class Sum {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Here the library import is Math. This [page](http://www.mathcs.emory.edu/~cheung/Courses/170/Syllabus/04/java-lib.html) goes into the details of importing. Technically *you don't need to include the import statement because java will automatically import any java.lang.anything* 
+
 Now let's download [IO.java](/IO.java) (a class that simplifies getting input and returning output to the user; Also streamlines our grading process via autolab).
 In the code above we have not imported the library so how are we still able to use it? This is because *Sum.java is in the same directory as IO.java so we can use all of IO's methods*. The methods and class are public so other programs can access it. Therefore we can use IO.java just by putting it in the same directory. Now if you are using eclipse you have packages and you will need to have package statements for each class Sum and Math.
