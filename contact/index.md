@@ -9,7 +9,7 @@ layout: default
 			</p>
 			<div>
 			<p>
-				* Email me: tarparab at outlook.com
+				* Email me: talktobhargav at gmail.com 
 			</p>
 	
 </div>
