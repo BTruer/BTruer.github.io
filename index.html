@@ -1,41 +1,32 @@
----
-layout: default
----
-<section class='main-content'>
 
-    {% for post in site.posts %}
-      {% if post.mytype contains 'tutorials' or post.mytype contains 'projects' or post.mytype contains 'cs111' %}
-        <article class='module color-3'>
-            <header>
-                <span class='categories'>{{ post.categories | array_to_sentence_string }}</span>
-
-                <h2>
-                    <a href='{{ fullUrl }}{{ post.url }}' title='{{ post.title }}'>
-                        {{ post.title }}
-                    </a>
-                </h2>
-
-
-            </header>
-
-            <p>{{ post.excerpt | strip_html | truncate: 250 }}</p>
-
-        </article>
-        {% endif %}
-    {% endfor %}
-
-    <div class='module pagination color-3'>
-        {% if paginator.previous_page %}
-            <a href='{{ site.url }}{{ paginator.previous_page_path }}' class='previous'>Previous</a>
-        {% endif %}
-
-        <span class='page_number'>
-            &mdash; {{ paginator.page }} of {{ paginator.total_pages }} &mdash;
-        </span>
-
-        {% if paginator.next_page %}
-            <a href='{{ site.url }}{{ paginator.next_page_path }}' class='next'>Next</a>
-        {% endif %}
-    </div>
-<!-- google anaytics -->
-</section>
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/style.css">
+        <meta charset="utf-8">
+        <title>Home · Bhargav Tarpara</title>
+        <meta name='robots' content='index,follow'>
+        <meta name='revisit-after' content='1 days'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <meta name='HandheldFriendly' content='True'>
+        <meta name='MobileOptimized' content='320'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+        <meta http-equiv='cleartype' content='on'>
+        <meta name="description" content="Personal Site">
+    </head>
+    <body>
+        <div id="menu">
+        <span class="title">Bhargav Tarpara</span>
+        <ul>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/bookshelf.html">Bookshelf</a></li>
+            <li><a href="/contact.html">Contact</a>
+            
+        </ul>
+        </div>
+        <div id="left">&nbsp;</div>
+        <div id="content">
+            <h3>Latest Content:</h3>
+        </div>
+    </body>
+</html>
