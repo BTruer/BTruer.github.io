@@ -1,0 +1,180 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/style.css" />
+    <meta charset="utf-8" />
+    <title>How to use AWS SQS Locally · Bhargav Tarpara</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="static/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150764699-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150764699-1');
+</script>
+
+  </head>
+  <body>
+    <div id="menu">
+      <span class="title">Bhargav Tarpara</span>
+      <ul>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/bookshelf.html">Bookshelf</a></li>
+      </ul>
+    </div>
+    <div id="left">&nbsp;</div>
+    <div id="content">
+        <!-- Copy and paste the converted output. -->
+
+<h1>How to use AWS SQS Locally</h1>
+<p>
+    <em>Posted: 12/27/2020</em>
+</p>
+<p>
+    Softwaremill has created an SQS compatible interface that is a docker container.
+    As long as you have docker you can run it. <a
+    href="https://github.com/softwaremill/elasticmq">Here</a> is the official
+    repository.
+    </p>
+    <p>
+    docker-compose.yaml
+    </p>
+    
+    
+    <pre
+    class="prettyprint">version: "2"
+    services:
+      elasticmq:
+        image: softwaremill/elasticmq-native
+        ports:
+          - '9324:9324'  #Server
+          - '9325:9325'  #UI
+    volumes:
+      elasticmq: null</pre>
+    <p>
+    You can start the server by running the container:<code> docker-compose up
+    -d</code>
+    </p>
+    <p>
+    You can automatically create a queue on start via <a
+    href="https://github.com/softwaremill/elasticmq#automatically-creating-queues-on-startup">config
+    file</a> or you can create on programmatically.
+    </p>
+    <p>
+    startup_script.py
+    </p>
+    
+    
+    <pre
+    class="prettyprint">import boto3
+    
+    VISIBILITY_TIMEOUT = "10800"  # seconds
+    client = boto3.resource(
+        "sqs",
+        endpoint_url="http://localhost:9324",
+        region_name="DOESNOTMATTER",
+        aws_secret_access_key="DOESNOTMATTER",
+        aws_access_key_id="DOESNOTMATTER",
+        use_ssl=False,
+    )
+    response = client.create_queue(
+        QueueName="queue1", Attributes={"VisibilityTimeout": VISIBILITY_TIMEOUT}
+    )</pre>
+    <p>
+    Creating/sending messages
+    </p>
+    
+    
+    <pre
+    class="prettyprint"># using boto3.client
+    
+    sqs = boto3.client(
+        "sqs",
+        region_name="DOESNOTMATTER",
+        endpoint_url="http://localhost:9324/queue/queue1",
+        aws_access_key_id="DOESNOTMATTER",
+        aws_secret_access_key="DOESNOTMATTER",
+    )
+    response = sqs.send_message(
+        QueueUrl="http://localhost:9324/queue/queue1",
+        MessageAttributes={
+            "message_type": {"DataType": "String", "StringValue": "message_type"}
+        },
+        MessageBody=str("body")
+    )
+    
+    # using boto3.resource
+    
+    client = boto3.resource(
+        'sqs',
+        endpoint_url="http://localhost:9324",
+        region_name="DOESNOTMATTER",
+        aws_secret_access_key='DOESNOTMATTER',
+        aws_access_key_id='DOESNOTMATTER',
+        use_ssl=False
+    )
+    queue = client.get_queue_by_name(QueueName='queue1')
+    response = queue.send_message(
+        MessageAttributes={
+            "message_type": {"DataType": "String", "StringValue": "message_type"}
+        },
+        MessageBody=str("body")
+    )
+    response_code = response["ResponseMetadata"]["HTTPStatusCode"]
+    if not (response_code >= 200 and response_code &lt; 300):
+        raise Exception(f"Non 200 response after sending message {response_code}")
+    print(str(response["MessageId"]))</pre>
+    <p>
+    Polling/receiving messages
+    </p>
+      <tr>
+       <td>
+    
+    
+    <pre
+    class="prettyprint"># boto3.client
+    
+    sqs = boto3.client(
+        "sqs",
+        region_name="DOESNOTMATTER",
+        endpoint_url="http://localhost:9324/queue/queue1",
+        aws_access_key_id="DOESNOTMATTER",
+        aws_secret_access_key="DOESNOTMATTER",
+    )
+    response = sqs.receive_message(
+        QueueUrl="http://localhost:9324/queue/queue1",
+        MaxNumberOfMessages=1,
+        MessageAttributeNames=["message_type"],
+        VisibilityTimeout=int(VISIBILITY_TIMEOUT),  # 0 - 43200
+        WaitTimeSeconds=0,  # 0 - 20 (delay of message retrieval)
+    )
+    message = response.get("Messages")
+    
+    # boto3.resource
+    
+    client = boto3.resource(
+      'sqs',
+       endpoint_url="http://localhost:9324",
+       region_name="DOESNOTMATTER",
+       aws_secret_access_key='DOESNOTMATTER',
+       aws_access_key_id='DOESNOTMATTER',
+       use_ssl=False
+    )
+    queue = client.get_queue_by_name(QueueName='queue1')
+    response = queue.receive_messages(
+        MaxNumberOfMessages=1,
+        MessageAttributeNames=["message_type"],
+        VisibilityTimeout=int(VISIBILITY_TIMEOUT),
+        WaitTimeSeconds=0
+    )
+    message = response.pop()
+    # ^ NOTE This message object is very different then the message object below
+    </pre>
+    </div>
+  </body>
+  </html>
