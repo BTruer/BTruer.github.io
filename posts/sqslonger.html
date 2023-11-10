@@ -151,7 +151,7 @@ class="prettyprint">while True:
     t.start()</pre>
 <p>
 Now this will poll consistently every 20 seconds and process the message on
-another thread (note: proces_the_message would run concurrently because of the
+another thread (note: process_the_message would run concurrently because of the
 <a href="https://wiki.python.org/moin/GlobalInterpreterLock">GIL</a> in <a
 href="https://github.com/python/cpython">CPython</a>). If you want it to run on
 another CPU do something like (essentially make sure the implementation and
@@ -233,7 +233,7 @@ the 20% of time when a job/etl/something is running you have your system shorten
 the polling duration AND skip polling while a job is being processed.
 </p>
 <p>
-In short you may want to poll longer than 20 seconds to: save on incuriseing
+In short you may want to poll longer than 20 seconds to: save on incurring 
 empty polling costs, if you are processing jobs synchronously then you might
 increase the poll wait interval to make sure you jobs are finished before change
 the poll time to a shorter time when you know you have some jobs to run.
